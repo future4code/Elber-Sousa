@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Adicionar Produto</title>
+    <link href="./style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img class="logo" src="./img/logo.png" alt="logo" />
+      <div>
+        <a href="./index.html"><button>Página Inicial</button></a>
+        <a href="./ctrl-estoque.html"><button>Controle de Estoque</button></a>
+        <a href="./add-produto.html"><button>Adicionar Produto</button></a>
+        <a href="./funcionarios.html"><button>Funcionários</button></a>
+        <a href="./vendas.html"><button>Vendas</button></a>
+        <a href="./histvendas.html"><button>Histórico de Vendas</button></a>
+      </div>
+    </header>
+    <h2>Página de Vendas</h2>
+    <form class="formu" action="#">
+      <div>
+        <label for="produtovenda">Produto: </label>
+        <input type="text" id="produtovenda" name="produto-venda" />
+      </div>
+
+      <div>
+        <label for="preco">Preço (em R$): </label>
+        <input type="text" id="preco" name="preço" />
+      </div>
+      
+      <form action="/action_page.php">
+       <p>Por favor escolha a forma de pagamento:</p>
+       <input type="radio" id="male" name="gender" value="male">
+       <label for="male">Cartão</label><br>
+       <input type="radio" id="female" name="gender" value="female">
+       <label for="female">Dinheiro</label><br>
+
+      <div class="form-add">
+        <button type="submit">Criar Lista</button>
+      </div>
+    </form>
+    
+    <table class="tab" border="1">
+     <tr>
+       <th>Produto</th>
+       <th>Descrição</th>
+       <th>Preço (R$)</th>
+       <th>Unidades</th>
+     </tr>
+
+     <tr>
+       <td>
+         <img
+           src="./img/fdbb2290352d24f0c6bb802ecd7acb7c3d505f.png_2.png"
+           alt="Salgadinho Cheetos"
+         />
+       </td>
+       <td>Salgadinho Cheetos</td>
+       <td>2,00</td>
+       <td>6</td>
+     </tr>
+
+     <tr>
+       <td>
+         <img
+           src="./img/22-223760_elma-chips-png-salgadinho-elma-chips-clipart.png"
+           alt="Salgadinho Ceblolitos"
+         />
+       </td>
+       <td>Salgadinho Cebolitos</td>
+       <td>3,00</td>
+       <td>8</td>
+     </tr>
+
+     <tr>
+       <td>
+         <img
+           src="./img/png-transparent-fizzy-drinks-fanta-orange-soft-drink-carbonated-water-fanta-orange-orange-drink-juice.png"
+           alt="Refrigerante lata Fanta laranja"
+         />
+       </td>
+       <td>Refrigerante lata Fanta laranja</td>
+       <td>2,00</td>
+       <td>10</td>
+     </tr>
+
+     <tr>
+       <td>
+         <img
+           src="./img/KUA_EMB_0006-NOVA-384x1024.png"
+           alt="Refrigerante Kuat 2L"
+         />
+       </td>
+       <td>Refrigerante 2L Kuat</td>
+       <td>5,00</td>
+       <td>7</td>
+     </tr>
+
+     <tr>
+       <td>
+         <img
+           src="./img/Bauducco-Produto-Biscoito-Maizena-e1506017080444.png"
+           alt="Biscoito Bauducco Maizena"
+         />
+       </td>
+       <td>Biscoito Bauducco Maizena</td>
+       <td>2,00</td>
+       <td>5</td>
+     </tr>
+   </table>
+
+    <footer class="redes">
+      <div class="siga">Siga-nos nas redes sociais!</div>
+      <img src="./img/aaaaaaa.png" />
+      <img src="./img/8800.png" />
+      <img src="./img/25425.png" />
+    </footer>
+  </body>
+</html>
