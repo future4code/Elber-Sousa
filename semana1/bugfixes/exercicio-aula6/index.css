@@ -136,6 +136,10 @@ td button {
   height: auto;
 }
 
+.comprar:hover {
+  background-color: rgb(156, 142, 15);
+}
+
 #back-button {
   background-color: white;
   width: 100px;
