@@ -8,17 +8,17 @@
     <link href="./style.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="cabecalho">
+    <header class="cabecalho">
       <img class="logo" src="./img/logo.png" alt="logo" />
-    </div>
-
-    <div>
-      <a href="./index.html"><button>Página Inicial</button></a>
-      <a href="./ctrl-estoque.html"><button>Controle de Estoque</button></a>
-      <a href="./add-produto.html"><button>Adicionar Produto</button></a>
-      <a href="./funcionarios.html"><button>Funcionários</button></a>
-    </div>
-
+      <div>
+        <a href="./index.html"><button>Página Inicial</button></a>
+        <a href="./ctrl-estoque.html"><button>Controle de Estoque</button></a>
+        <a href="./add-produto.html"><button>Adicionar Produto</button></a>
+        <a href="./funcionarios.html"><button>Funcionários</button></a>
+        <a href="./vendas.html"><button>Vendas</button></a>
+        <a href="./histvendas.html"><button>Histórico de Vendas</button></a>
+      </div>
+    </header>
     <h2>Adicionar Produto</h2>
     <form action="#">
       <div>
@@ -33,7 +33,7 @@
 
       <div>
         <label for="preco">Preço (em R$): </label>
-        <input type="number" id="preco" name="preço" />
+        <input type="text" id="preco" name="preço" />
       </div>
 
       <div>
@@ -45,11 +45,11 @@
         <button type="submit">Adicionar</button>
       </div>
     </form>
-    <div class="redes">
-      <p>Siga-nos nas redes sociais!</p>
-      <img src="https://image.flaticon.com/icons/png/512/25/25305.png" />
-      <img src="https://image.flaticon.com/icons/png/512/25/25425.png" />
-      <img src="https://image.flaticon.com/icons/png/512/8/8800.png" />
-    </div>
+    <footer class="redes">
+      <div class="siga">Siga-nos nas redes sociais!</div>
+      <img src="./img/aaaaaaa.png" />
+      <img src="./img/8800.png" />
+      <img src="./img/25425.png" />
+    </footer>
   </body>
 </html>
