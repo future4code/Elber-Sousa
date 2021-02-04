@@ -119,6 +119,11 @@ td button {
   margin: auto;
 }
 
+.tabelinha img {
+  background-color: white;
+  max-width: 60px;
+}
+
 .container-do-search {
   margin-top: 20px;
   height: 100px;
