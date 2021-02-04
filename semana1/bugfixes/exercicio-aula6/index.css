@@ -129,6 +129,13 @@ td button {
   height: 100px;
 }
 
+.pesquisar {
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 1px;
+  border-bottom: 1px solid black;
+}
+
 .container-do-search img {
   background-color: white;
   max-width: 15px;
