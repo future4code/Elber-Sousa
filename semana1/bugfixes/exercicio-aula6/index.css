@@ -48,6 +48,11 @@ div img {
   display: block;
 }
 
+.textinho {
+  padding: 75px;
+  list-style-position: inside;
+}
+
 .botao-amarelo:hover {
   background-color: #c44f00;
 }
