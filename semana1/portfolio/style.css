@@ -1,8 +1,78 @@
-body {
+body,
+html {
+  width: 100%;
   margin: 0;
-  background: url(./img/re58sfgp0p3y.jpg);
+  padding: 0;
+  height: 100%;
+  background-image: url(./img/background.gif);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #14183c;
+  image-resolution: 100%;
+  font-family: 'Press Start 2P', cursive;
 }
 
-#container {
-  background: url(./img/re58sfgp0p3y.jpg);
+.menu ul {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+  margin-top: 0;
+}
+
+.menu ul {
+  background-color: black;
+  border-radius: 10px;
+}
+
+.menu ul li {
+  display: inline-flex;
+  justify-content: center;
+}
+
+.menu ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+}
+
+.menu ul li a:hover {
+  background-color: white;
+  color: black;
+  border-radius: 5px;
+}
+
+.container {
+  text-align: center;
+  margin-top: 100px;
+  display: flex;
+  justify-content: center;
+}
+
+.avatar {
+  width: 50%;
+  height: auto;
+  display: inline;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 50%;
+}
+
+.circulo {
+  height: auto;
+  width: auto;
+  border: 0;
+  margin-top: 20px;
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 10px;
+  border-width: 2px;
+  border-color: white;
+  border-style: solid;
+  text-align: center;
+  color: white;
+}
+
+.circulo h4 {
+  font-size: 12px;
 }
