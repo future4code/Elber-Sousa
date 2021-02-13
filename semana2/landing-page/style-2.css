@@ -1,0 +1,147 @@
+
+/* primeiro parte do site abaixo do header */
+
+.main-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 60px;
+    background: linear-gradient(#00FF6E, #66FFA3);
+    margin: auto;
+    height: 500px;
+}
+
+.main-banner h2 {
+    font-size: 60px;
+    color: white;
+    padding-bottom: 25px
+}
+
+.main-banner p {
+  font-size: 30px;
+  padding-bottom: 25px;
+
+}
+
+.descricao {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.bnt {
+    color: black;
+    background-color: white;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.imagem {
+    padding-right: 50px;
+}
+
+
+/*.descricao {
+    display: flex;
+}  */  
+
+/*.imagem {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end ;
+    top: 50px;
+    left: 900px;
+    padding-top: 30px;
+    
+}*/
+
+
+/*segunda sessão do site */
+
+.controle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f5f5f5;
+    height: 580px;
+    padding: 0 40px;
+    
+}
+
+.controle p {
+    font-size: 30px;
+    padding-bottom: 25px;
+}
+
+.controle button {
+    text-decoration: none;
+    background-color: #00ff6e;
+    padding: 10px;
+    
+}
+
+.controle fieldset {
+    border-radius: 5px;
+    padding: 50px;
+    background-color: white;
+    opacity: 5;
+
+}
+
+
+.controle fieldset legend {
+    text-align: center;
+    color: #00ff6e;
+    font-size: 20px;
+}
+
+.controle fieldset input {
+    padding: 10px;
+    
+}
+
+#bass {
+   margin-bottom: 5px;
+}
+
+.btn_submit {
+    
+
+    background-color: #00ff6e;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+/* footer */
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    background-color: black;
+    height: 80px;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-1 {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    
+}
+
+.footer-1 img {
+    height: 60px;
+}
+
+
+.social img {
+    height: 50px;
+    
+}
+
+.social {
+    padding-right: 40px;
+}
