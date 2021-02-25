@@ -11,12 +11,26 @@ console.log('Elementos do array');
 for (let numeros of array) {
   console.log(numeros);
 }
-
+//////////////////////
 console.log('Elementos do array divididos por 10');
 for (let numerosDivididos of array) {
   console.log(numerosDivididos / 10);
 }
-
+/////////////////////
+let arrayPar = [];
+for (let par of array) {
+  if (par % 2 === 0) {
+    arrayPar.push(par);
+  }
+}
+console.log(arrayPar);
+////////////////////
+let index = 0;
+for (let pos of array) {
+  console.log('O elemento do índex', index, 'é', pos);
+  index = index + 1;
+}
+////////////////////
 let menorNumero = array[0];
 let maiorNumero = 0;
 for (let num of array) {
