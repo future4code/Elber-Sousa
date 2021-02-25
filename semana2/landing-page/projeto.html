@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>F4Bank</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="site.webmanifest" />
+    <script
+      src="https://kit.fontawesome.com/0c4f09d73c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="navbar">
+        <a href="./projeto.html"><img src="./img/logo.png" class="logo" /></a>
+        <nav>
+          <ul id="menuList">
+            <li><a href="./projeto.html">Home</a></li>
+            <li><a href="./cartao.html">Cartão</a></li>
+            <li><a href="#">Sobre nós</a></li>
+            <li><a href="#">Contato</a></li>
+          </ul>
+        </nav>
+        <img src="./img/menu.png" class="menu-icone" onclick="togglemenu()" />
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>
+            Um banco<br />
+            na palma da sua mão
+          </h2>
+          <h3>Simples e direto</h3>
+          <a href="./cartao.html"><button type="button">
+            Faça já o seu cartão <img src="./img/arrow.png" />
+          </button></a>
+        </div>
+        <div class="col-2">
+          <img src="./img/undraw_progressive_app_m9ms.png" class="cel" />
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>
+            Traga seu<br />
+            FGTS e Auxilio<br>
+            para a F4Bank
+          </h2>
+          <h3>Seguro e sem complicações</h3>
+          <button type="button">
+            Confira os benefícios <img src="./img/arrow.png" />
+          </button>
+        </div>
+        <div class="col-2">
+          <img src="./img/undraw_Mobile_app_re_catg.png" class="cel" />
+          <div class="color-box"></div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1">
+          <h2>
+            Acumule pontos<br />
+            ao fazer compras e troque por benefícios
+          </h2>
+          <h3>Viaje com a gente</h3>
+          <button type="button">
+            Faça já o seu cartão <img src="./img/arrow.png" />
+          </button>
+        </div>
+        <div class="col-2">
+          <img src="./img/undraw_travelers_qlt1.png" class="cel" />
+          <div class="color-box"></div>
+        </div>
+      </div>
+    </div>
+    <div class="social-links">
+      <img src="./img/fb.png" />
+      <img src="./img/tw.png" />
+      <img src="./img/ig.png" />
+    </div>
+
+    <script>
+      var menuList = document.getElementById('menuList');
+      menuList.style.maxHeight = '0px';
+      function togglemenu() {
+        if (menuList.style.maxHeight == '0px') {
+          menuList.style.maxHeight = '130px';
+        } else {
+          menuList.style.maxHeight = '0px';
+        }
+      }
+    </script>
+  </body>
+</html>
