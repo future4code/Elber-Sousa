@@ -10,8 +10,29 @@
  * 
  * 
  */
+
+console.log('Bem vindo ao jogo de BlackJack!')
 if (confirm('Quer iniciar uma nova rodada?')===true){
-   
+   let carta1 = comprarCarta()
+   let carta2 = comprarCarta()
+   let carta1Pc = comprarCarta()
+   let carta2Pc = comprarCarta()
+
+   let pontos = carta1.valor + carta2.valor
+   let pontosPc = carta1Pc.valor + carta2Pc.valor
+
+   console.log(`Usuário - cartas: ${carta1.texto} ${carta2.texto} - ${pontos})`)
+   console.log(`Computador - cartas: ${carta1Pc.texto} ${carta2Pc.texto} - ${pontosPc})`)
+
+   if (pontos > pontosPc){
+      console.log('O usuário ganhou!!!')
+   }
+   else if (pontosPc > pontos){
+      console.log('O computador ganhou!!!')
+   }
+   else if (pontos === pontosPc){
+      console.log('Empate!!!')
+   }
 }
 else{
    console.log('O jogo acabou.')
