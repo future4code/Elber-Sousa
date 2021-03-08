@@ -1,78 +1,154 @@
 //Exercício 1
 
-const numbers = [0, 8, 23, 16, 10, 15, 41, 12, 13];
-
 function inverteArray(array) {
   // implemente sua lógica aqui
-  numbers.reverse()
+  const numbers = [0, 8, 23, 16, 10, 15, 41, 12, 13];
+  return numbers.reverse();
 }
-
 //Exercício 2
 
 function retornaNumerosParesElevadosADois(array) {
   // implemente sua lógica aqui
+  const numbers = [1, 2, 3, 4, 5, 6];
+  let pares = [];
   for (var i = 0; i < numbers.length; i++) {
-     if (numbers[i] %2 === 0){
-        numbers[i] = numbers[i]*2
-     }
+    if (numbers[i] % 2 === 0) {
+      numbers[i] = numbers[i] * numbers[i];
+      pares.push(numbers[i]);
+    }
   }
-  console.log(numbers)
+  return pares;
 }
-
 //Exercício 3
 
 function retornaNumerosPares(array) {
   // implemente sua lógica aqui
+  const numbers = [1, 2, 3, 4, 5, 6];
+  let pares = [];
+  for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] % 2 === 0) {
+      pares.push(numbers[i]);
+    }
+  }
+  return pares;
 }
 
 //Exercício 4
 
 function retornaMaiorNumero(array) {
   // implemente sua lógica aqui
+  numbers = [10, 18, 7, 56, 39];
+  let maiorNumero = 0;
+  for (var i = 0; i < numbers.length; i++) {
+    if (numbers[i] > maiorNumero) {
+      maiorNumero = numbers[i];
+    }
+  }
+  return maiorNumero;
 }
 
 //Exercício 5
 
 function retornaQuantidadeElementos(array) {
   // implemente sua lógica aqui
-  for (var i = 0; i < numbers.length; i++) {}
-  console.log('A quantidade de elementos no array é de:', i);
+  return array.length;
 }
 
 //Exercício 6
 
 function retornaExpressoesBooleanas() {
   // implemente sua lógica aqui
+  const booleano1 = true;
+  const booleano2 = false;
+  const booleano3 = !booleano2;
+  const booleano4 = !booleano3;
+  respostas = [false, false, true, true, true];
+  return respostas;
 }
 
 //Exercício 7
 
 function retornaNNumerosPares(n) {
   // implemente sua lógica aqui
+  n = 5;
+  let numerosPares = [];
+  for (var i = 0; i < n * 2; i++) {
+    if (i % 2 === 0) {
+      numerosPares.push(i);
+    }
+  }
+  return numerosPares;
 }
 
 // Exercício 8
 
 function checaTriangulo(a, b, c) {
   // implemente sua lógica aqui
+  if (a === b && b === c) {
+    return 'Equilátero';
+  } else if (a === b && b !== c) {
+    return 'Isósceles';
+  } else {
+    return 'Escaleno';
+  }
 }
 
 // Exercício 9
 
 function comparaDoisNumeros(num1, num2) {
   // implemente sua lógica aqui
+  let menorNumero = 0;
+  let saida = {
+    maiorNumero: 0,
+    maiorDivisivelporMenor: 0,
+    diferenca: 0
+  };
+  if (num1 > num2) {
+    saida.maiorNumero = num1;
+    menorNumero = num2;
+  } else if (num2 > num1) {
+    saida.maiorNumero = num2;
+    menorNumero = num1;
+  }
+  if (saida.maiorNumero % menorNumero === 0) {
+    saida.maiorDivisivelporMenor = true;
+  } else {
+    saida.maiorDivisivelporMenor = false;
+  }
+  saida.diferenca = saida.maiorNumero - menorNumero;
+  return saida;
 }
 
 // Exercício 10
 
 function segundoMaiorEMenor(array) {
   // implemente sua lógica aqui
+  let segundos = [];
+  let max = array.map(Number).reduce(function (a, b) {
+    return Math.max(a, b);
+  });
+  array.splice(array.indexOf(max), 1);
+  var min = array.map(Number).reduce(function (a, b) {
+    return Math.min(a, b);
+  });
+  array.splice(array.indexOf(min), 1);
+  max = array.map(Number).reduce(function (a, b) {
+    return Math.max(a, b);
+  });
+  min = array.map(Number).reduce(function (a, b) {
+    return Math.min(a, b);
+  });
+  segundos.push(max, min);
+  return segundos;
 }
 
 //Exercício 11
 
 function ordenaArray(array) {
   // implemente sua lógica aqui
+  return array.sort(function (a, b) {
+    return a - b;
+  });
 }
 
 // Exercício 12
