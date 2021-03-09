@@ -155,24 +155,58 @@ function ordenaArray(array) {
 
 function filmeFavorito() {
   // implemente sua lógica aqui
+  const filmeFavorito = {
+    nome: 'O Diabo Veste Prada',
+    ano: 2006,
+    diretor: 'David Frankel',
+    atores: ['Meryl Streep', 'Anne Hathaway', 'Emily Blunt', 'Stanley Tucci']
+  };
+  return filmeFavorito;
 }
 
 // Exercício 13
 
 function imprimeChamada() {
   // implemente sua lógica aqui
+  const filmeFavorito = {
+    nome: 'O Diabo Veste Prada',
+    ano: 2006,
+    diretor: 'David Frankel',
+    atores: [
+      'Meryl Streep',
+      ' Anne Hathaway',
+      ' Emily Blunt',
+      ' Stanley Tucci.'
+    ]
+  };
+  return `Venha assistir ao filme ${filmeFavorito.nome}, de ${filmeFavorito.ano}, dirigido por ${filmeFavorito.diretor} e estrelado por ${filmeFavorito.atores}`;
 }
 
 // Exercício 14
 
 function criaRetangulo(lado1, lado2) {
   // implemente sua lógica aqui
+  let retangulo = {
+    largura: lado1,
+    altura: lado2,
+    perimetro: 2 * (lado1 + lado2),
+    area: lado1 * lado2
+  };
+  return retangulo;
 }
 
 // Exercício 15
 
 function anonimizaPessoa(pessoa) {
   // implemente sua lógica aqui
+  anonimo = {
+    nome: pessoa.nome,
+    idade: pessoa.idade,
+    email: pessoa.email,
+    endereco: pessoa.endereco
+  };
+  anonimo.nome = 'ANÔNIMO';
+  return anonimo;
 }
 
 // Exercício 16
@@ -189,7 +223,6 @@ const arrayDePessoas = [
 function maioresDe18(arrayDePessoas) {
   // implemente sua lógica aqui
 }
-
 // Exercício 16, letra B
 
 function menoresDe18(arrayDePessoas) {
@@ -200,18 +233,34 @@ function menoresDe18(arrayDePessoas) {
 
 function multiplicaArrayPor2(array) {
   // implemente sua lógica aqui
+  for (var i = 0; i < array.length; i++) {
+    array[i] = array[i] * 2;
+  }
+  return array;
 }
 
 // Exercício 17, letra B
 
 function multiplicaArrayPor2S(array) {
   // implemente sua lógica aqui
+  for (var i = 0; i < array.length; i++) {
+    array[i] = array[i] * 2 + '';
+  }
+  return array;
 }
 
 // Exercício 17, letra C
 
 function verificaParidade(array) {
   // implemente sua lógica aqui
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] % 2 === 0) {
+      array[i] = array[i] + ' é par';
+    } else {
+      array[i] = array[i] + ' é ímpar';
+    }
+  }
+  return array;
 }
 
 // Exercício 18
