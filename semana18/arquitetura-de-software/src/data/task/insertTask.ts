@@ -1,5 +1,5 @@
-import { connection } from "./connection";
-import { task } from "../model/task";
+import { connection } from "../connection";
+import { task } from "../../model/task";
 
 export const insertTask = async (
    task: task
